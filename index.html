@@ -1,1 +1,251 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marius Clausen Digranes - Portfolio</title>
+  <style>
+    /* Farger */
+    :root {
+      --primary-dark: #2d3a45; /* Mørk blå/grå */
+      --primary-light: #e5e5e5; /* Lys grå */
+      --accent-blue: #4e6d77; /* Myk blå */
+      --highlight-color: #f4a261; /* Varme oransjeaktig farge */
+      --white: #ffffff;
+      --black: #000000;
+    }
+
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary-dark);
+      color: var(--white);
+      text-align: center;
+      padding: 4rem 0;
+    }
+
+    header img {
+      max-width: 250px;
+      height: auto;
+      border-radius: 50%;
+      border: 5px solid var(--white);
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      color: var(--highlight-color);
+    }
+
+    nav {
+      background: var(--accent-blue);
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+    }
+
+    nav a:hover {
+      background: var(--highlight-color);
+      color: var(--primary-dark);
+      border-radius: 5px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: var(--primary-dark);
+      text-align: center;
+      border-bottom: 3px solid var(--highlight-color);
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .about, .cv, .projects, .contact {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .about p {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .cv ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .cv ul li {
+      background: var(--highlight-color);
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      border-radius: 5px;
+      color: var(--primary-dark);
+    }
+
+    .projects .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: var(--primary-light);
+      border: 1px solid var(--highlight-color);
+      border-radius: 10px;
+      padding: 1.5rem;
+      width: calc(33.333% - 1rem);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card h3 {
+      color: var(--primary-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      color: var(--accent-blue);
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact form input, .contact form textarea {
+      padding: 0.8rem;
+      border: 1px solid var(--primary-dark);
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact form button {
+      background: var(--highlight-color);
+      color: var(--white);
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .contact form button:hover {
+      background: var(--primary-dark);
+    }
+
+    footer {
+      background: var(--accent-blue);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .project-card {
+        width: calc(50% - 1rem);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .project-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="path_to_your_image.jpg" alt="Marius Clausen Digranes">
+    <h1>Marius Clausen Digranes</h1>
+    <p>Medie- og interaksjonsdesign student</p>
+  </header>
+
+  <nav>
+    <a href="#about">Om Meg</a>
+    <a href="#cv">CV</a>
+    <a href="#projects">Prosjekter</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <div class="container">
+    <section id="about" class="about">
+      <h2>Om Meg</h2>
+      <p>Hei! Jeg heter Marius Clausen Digranes, og jeg studerer Medie- og interaksjonsdesign. Jeg er lidenskapelig opptatt av brukeropplevelse, design og webutvikling. Her kan du finne mer om meg, mine prosjekter og CV.</p>
+    </section>
+
+    <section id="cv" class="cv">
+      <h2>CV</h2>
+      <ul>
+        <li>Bachelor i Medie- og interaksjonsdesign - [Universitet]</li>
+        <li>Frivillig arbeid med webdesignprosjekter</li>
+        <li>Erfaring med HTML, CSS, JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Prosjekter</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Prosjekt 1</h3>
+          <p>Beskrivelse av prosjektet.</p>
+        </div>
+        <div class="project-card">
+          <h3>Prosjekt 2</h3>
+          <p>Beskrivelse av prosjektet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Kontakt</h2>
+      <form action="mailto:marius.digr@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Navn" required>
+        <input type="email" name="email" placeholder="E-post" required>
+        <textarea name="message" rows="5" placeholder="Din melding" required></textarea>
+        <button type="submit">Send Melding</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Marius Clausen Digranes. Alle rettigheter reservert.</p>
+  </footer>
+</body>
+</html>
